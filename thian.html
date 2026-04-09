@@ -700,6 +700,7 @@
     align-items: flex-end;
   }
   .lookbook-strip {
+    position: relative;
     display: flex;
     gap: 20px;
     padding: 0 80px;
@@ -707,6 +708,7 @@
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
   .lookbook-strip::-webkit-scrollbar { display: none; }
   .look-item {
@@ -739,6 +741,49 @@
     font-size: 10px;
     letter-spacing: 0.2em;
     color: var(--muted);
+  }
+
+  .lookbook-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1px solid rgba(184,154,106,0.24);
+    background: rgba(10,10,10,0.40);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgba(248,245,242,0.92);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+    user-select: none;
+  }
+  .lookbook-nav:hover { transform: translateY(-50%) scale(1.03); background: rgba(10,10,10,0.55); }
+  .lookbook-nav:active { transform: translateY(-50%) scale(0.98); }
+  .lookbook-nav[disabled] { opacity: 0.35; cursor: default; }
+  .lookbook-nav.left { left: 18px; }
+  .lookbook-nav.right { right: 18px; }
+  .lookbook-nav svg { width: 18px; height: 18px; }
+  .lookbook-fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 120px;
+    pointer-events: none;
+    z-index: 4;
+  }
+  .lookbook-fade.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(18,17,16,0.95) 0%, rgba(18,17,16,0) 100%);
+  }
+  .lookbook-fade.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(18,17,16,0.95) 0%, rgba(18,17,16,0) 100%);
   }
 
   /* ── CRAFTSMANSHIP DETAIL ── */
