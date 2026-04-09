@@ -356,32 +356,7 @@
     transition: transform 0.22s ease, filter 0.22s ease;
   }
   .btn-primary:hover { transform: translateY(-1px); filter: brightness(1.03); }
-  .hero-scroll {
-    position: absolute;
-    bottom: clamp(86px, 10vh, 132px);
-    right: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    z-index: 2;
-    opacity: 0;
-    animation: fadeIn 1s 1.5s forwards;
-  }
-  .hero-scroll span {
-    font-size: 9px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--muted);
-    writing-mode: vertical-rl;
-  }
-  .scroll-line {
-    width: 1px;
-    height: 60px;
-    background: linear-gradient(to bottom, var(--gold), transparent);
-    animation: linePulse 2s 2s infinite;
-  }
-
+  /* hero scroll indicator removed */
   /* ── MARQUEE ── */
   .marquee-wrap {
     background: var(--charcoal);
@@ -691,6 +666,9 @@
     background: var(--charcoal);
     padding: 120px 0;
     overflow: hidden;
+  }
+  .lookbook-wrap {
+    position: relative;
   }
   .lookbook-header {
     padding: 0 80px;
@@ -1436,7 +1414,6 @@
     }
     #hero { padding-top: clamp(74px, 10vh, 104px); }
     .hero-content { padding: 0 var(--gutter); width: min(820px, calc(100vw - (var(--gutter) * 2))); }
-    .hero-scroll { right: var(--gutter); bottom: clamp(86px, 10vh, 132px); }
     .collections-header, .lookbook-header, .mosaic-header { flex-direction: column; align-items: flex-start; gap: 26px; }
     .collections-grid { grid-template-columns: 1fr; }
     .col-card:first-child { grid-column: auto; }
@@ -1445,6 +1422,8 @@
     #stats { grid-template-columns: 1fr 1fr; padding: 40px var(--gutter); }
     .stat-cell { padding: 34px 18px; }
     .lookbook-strip { padding: 0 var(--gutter); }
+    .lookbook-nav { display: none; }
+    .lookbook-fade { width: 64px; }
     #feature .feature-content { padding: 0 var(--gutter); }
     .feature-number { left: 16px; font-size: 130px; }
     .process-steps { grid-template-columns: 1fr; }
@@ -1526,11 +1505,6 @@
       <a href="#contact" class="btn-outline">Book showroom visit <span class="btn-arrow">→</span></a>
     </div>
   </div>
-  <div class="hero-scroll">
-    <div class="scroll-line"></div>
-    <span>Scroll</span>
-  </div>
-
   <!-- MARQUEE (pinned to hero) -->
   <div class="marquee-wrap hero-marquee">
     <div class="marquee-track" id="marqueeTrack">
@@ -2208,6 +2182,31 @@
   window.addEventListener('load', () => {
     slides[0].classList.add('active');
   });
+
+  // Lookbook arrows
+  const lookStrip = document.getElementById('lookStrip');
+  const lookLeft = document.getElementById('lookLeft');
+  const lookRight = document.getElementById('lookRight');
+
+  function lookScrollBy(direction) {
+    if (!lookStrip) return;
+    const delta = Math.round(lookStrip.clientWidth * 0.82) * direction;
+    lookStrip.scrollBy({ left: delta, behavior: 'smooth' });
+  }
+
+  function updateLookNav() {
+    if (!lookStrip || !lookLeft || !lookRight) return;
+    const max = lookStrip.scrollWidth - lookStrip.clientWidth;
+    const x = lookStrip.scrollLeft;
+    lookLeft.disabled = x <= 2;
+    lookRight.disabled = x >= max - 2;
+  }
+
+  lookLeft?.addEventListener('click', () => lookScrollBy(-1));
+  lookRight?.addEventListener('click', () => lookScrollBy(1));
+  lookStrip?.addEventListener('scroll', updateLookNav, { passive: true });
+  window.addEventListener('resize', updateLookNav);
+  window.addEventListener('load', updateLookNav);
 
   // Reveal on scroll
   const reveals = document.querySelectorAll('.reveal');
