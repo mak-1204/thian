@@ -1706,7 +1706,20 @@
     <a href="#contact" class="btn-outline">Request a Quote <span class="btn-arrow">→</span></a>
   </div>
 
-  <div class="lookbook-strip">
+  <div class="lookbook-wrap">
+    <div class="lookbook-fade left" aria-hidden="true"></div>
+    <div class="lookbook-fade right" aria-hidden="true"></div>
+    <button class="lookbook-nav left" type="button" aria-label="Scroll projects left" id="lookLeft">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M14.5 5.5L8.5 12l6 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="lookbook-nav right" type="button" aria-label="Scroll projects right" id="lookRight">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M9.5 5.5l6 6.5-6 6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="lookbook-strip" id="lookStrip" aria-label="Projects carousel">
     <div class="look-item">
       <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=90" alt="Living room 1">
       <div class="look-caption">
@@ -1741,6 +1754,7 @@
         <span class="look-name">Gather in Gold</span>
         <span class="look-num">05</span>
       </div>
+    </div>
     </div>
   </div>
 </section>
