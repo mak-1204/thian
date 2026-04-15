@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thian — Luxury Furniture & Sofas</title>
+<meta name="description" content="Luxury furniture and bespoke sofas crafted for homes that demand the finest. Explore curated collections, lookbooks, and book a showroom consultation.">
+<meta name="theme-color" content="#0B0A09">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/output.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor" aria-hidden="true">
+  <span class="cursor-label">View →</span>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-left">
+    <a href="#collections" class="nav-link">COLLECTIONS</a>
+    <a href="#intro" class="nav-link">ABOUT</a>
+  </div>
+  <a href="#" class="nav-logo">thian.in</a>
+  <div class="nav-actions">
+    <div class="nav-right">
+      <a href="#lookbook" class="nav-link">PROJECTS</a>
+      <a href="#stores" class="nav-link">STORES</a>
+    </div>
+    <a class="nav-cta" href="#contact">Book Visit <span aria-hidden="true">→</span></a>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-panel" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="mobile-top">
+      <a href="#" class="nav-logo">thian.in</a>
+      <button class="mobile-close" id="menuClose" aria-label="Close menu">✕</button>
+    </div>
+    <div class="section-label" style="margin-bottom:12px;">Navigate</div>
+    <ul class="mobile-links" id="mobileLinks">
+      <li><a href="#collections">Collections <span>01</span></a></li>
+      <li><a href="#intro">About <span>02</span></a></li>
+      <li><a href="#why">Why Thian <span>03</span></a></li>
+      <li><a href="#mosaic">Editorial <span>04</span></a></li>
+      <li><a href="#lookbook">Projects <span>05</span></a></li>
+      <li><a href="#materials">Materials <span>06</span></a></li>
+      <li><a href="#craft">Craft <span>07</span></a></li>
+      <li><a href="#gallery">Gallery <span>08</span></a></li>
+      <li><a href="#stores">Stores <span>09</span></a></li>
+      <li><a href="#contact">Book Visit <span>10</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-backdrop" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-showcase" id="heroShowcase" aria-label="Featured Thian sofas">
+    <div class="hero-brand-bg" aria-hidden="true">THIAN</div>
+    <div class="sofa-stage">
+      <figure class="sofa-item active" data-sofa-item>
+        <img class="sofa-img" src="./1.png" alt="Thian premium sofa silhouette one" fetchpriority="high" decoding="async">
+      </figure>
+      <figure class="sofa-item" data-sofa-item>
+        <img class="sofa-img" src="./2.png" alt="Thian premium sofa silhouette two" loading="lazy" decoding="async">
+      </figure>
+      <figure class="sofa-item" data-sofa-item>
+        <img class="sofa-img" src="./3.png" alt="Thian premium sofa silhouette three" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-sub">Crafted to last a lifetime. Designed to define a room.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#collections">Explore collections <span aria-hidden="true">→</span></a>
+      <a href="#contact" class="btn-outline">Book showroom visit <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+  <!-- MARQUEE (pinned to hero) -->
+  <div class="marquee-wrap hero-marquee">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="marquee-item">
+        <span class="marquee-text">Bespoke Sofas</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Premium Fabrics</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Handcrafted Excellence</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Luxury Living</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Timeless Design</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Custom Interiors</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Thian</span>
+        <span class="marquee-dot"></span>
+      </div>
+      <div class="marquee-item" aria-hidden="true">
+        <span class="marquee-text">Bespoke Sofas</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Premium Fabrics</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Handcrafted Excellence</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Luxury Living</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Timeless Design</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Custom Interiors</span>
+        <span class="marquee-dot"></span>
+        <span class="marquee-text">Thian</span>
+        <span class="marquee-dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section id="intro">
+  <div class="intro-image reveal">
+    <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=900&q=90" alt="Thian signature sofa">
+    <div class="intro-badge">Crafted in India. Loved everywhere.</div>
+  </div>
+  <div class="intro-text reveal">
+    <div class="section-label">About Thian</div>
+    <h2 class="section-title">Luxury, Made<br>for <em>Living</em></h2>
+    <p class="intro-body">
+      Thian creates bespoke sofas and premium furniture with one promise: comfort that feels indulgent, craftsmanship that feels effortless.
+      <br><br>
+      Built in India, shaped by a global design sensibility, and finished with materials chosen for longevity—our pieces are made-to-order, made-to-fit, and made to be lived in, every day.
+    </p>
+    <a href="#collections" class="btn-outline">Explore Collections <span class="btn-arrow">→</span></a>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections">
+  <div class="collections-header reveal">
+    <div>
+      <div class="section-label">Our Collections</div>
+      <h2 class="section-title">Curated for<br><em>Every Space</em></h2>
+    </div>
+    <a href="#lookbook" class="btn-outline">View Projects <span class="btn-arrow">→</span></a>
+  </div>
+
+  <div class="collections-grid reveal">
+    <div class="col-card">
+      <img class="col-card-img" src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=900&q=90" alt="Signature Sofas">
+      <div class="col-card-overlay">
+        <span class="col-card-tag">Signature Series</span>
+        <h3 class="col-card-name">Sofas &<br>Sectionals</h3>
+      </div>
+    </div>
+    <div class="col-card">
+      <img class="col-card-img" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=90" alt="Recliners">
+      <div class="col-card-overlay">
+        <span class="col-card-tag">Comfort Series</span>
+        <h3 class="col-card-name">Recliners</h3>
+      </div>
+    </div>
+    <div class="col-card">
+      <img class="col-card-img" src="https://images.unsplash.com/photo-1615873968403-89e068629265?w=800&q=90" alt="Bedroom">
+      <div class="col-card-overlay">
+        <span class="col-card-tag">Sanctuary</span>
+        <h3 class="col-card-name">Bedroom<br>Furniture</h3>
+      </div>
+    </div>
+    <div class="col-card">
+      <img class="col-card-img" src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&q=90" alt="Dining">
+      <div class="col-card-overlay">
+        <span class="col-card-tag">Gather</span>
+        <h3 class="col-card-name">Dining &<br>Tables</h3>
+      </div>
+    </div>
+    <div class="col-card">
+      <img class="col-card-img" src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800&q=90" alt="Accent">
+      <div class="col-card-overlay">
+        <span class="col-card-tag">Detail</span>
+        <h3 class="col-card-name">Accent &<br>Armchairs</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIAN -->
+<section id="why">
+  <div class="reveal">
+    <div class="section-label">Why Choose Thian</div>
+    <h2 class="section-title">Comfort you feel.<br>Quality you <em>keep</em>.</h2>
+  </div>
+  <div class="why-grid reveal">
+    <div class="why-card">
+      <div class="why-title">Made-to-order</div>
+      <p class="why-desc">Custom sizing, configuration, and comfort—built around your space, not the other way around.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-title">Premium materials</div>
+      <p class="why-desc">Curated fabrics, foams, and finishes selected for longevity, hand-feel, and everyday performance.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-title">Crafted with care</div>
+      <p class="why-desc">Solid frames, refined stitching, and thoughtful proportions—made to look elegant for years.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-title">White-glove delivery</div>
+      <p class="why-desc">Delivered, placed, and styled with aftercare support—so your home feels complete, instantly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE QUOTE -->
+<section id="feature">
+  <div class="feature-bg"></div>
+  <div class="feature-overlay"></div>
+  <div class="feature-content">
+    <div class="feature-number">T</div>
+    <blockquote class="feature-quote">
+      "The finest furniture is not the loudest. It is the one you never want to leave."
+    </blockquote>
+    <p class="feature-attr">— The Thian Philosophy</p>
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats" class="reveal">
+  <div class="stat-cell">
+    <div class="stat-number">500<span class="stat-unit">+</span></div>
+    <div class="stat-label">Homes<br>Furnished</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">12<span class="stat-unit">yr</span></div>
+    <div class="stat-label">Crafting<br>Excellence</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">80<span class="stat-unit">+</span></div>
+    <div class="stat-label">Fabric &<br>Finish Options</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">5<span class="stat-unit">★</span></div>
+    <div class="stat-label">Client<br>Rating</div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="lookbook">
+  <div class="lookbook-header reveal">
+    <div>
+      <div class="section-label">Projects &amp; Lookbook</div>
+      <h2 class="section-title">Rooms That<br><em>Feel Complete</em></h2>
+    </div>
+    <a href="#contact" class="btn-outline">Request a Quote <span class="btn-arrow">→</span></a>
+  </div>
+
+  <div class="look-accordion reveal" id="lookAccordion" role="list" aria-label="Room projects">
+
+    <div class="look-panel active" role="listitem" tabindex="0" aria-label="The Meridian Suite">
+      <img class="look-panel-img" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400&q=90" alt="The Meridian Suite" loading="lazy" decoding="async">
+      <div class="look-panel-overlay" aria-hidden="true"></div>
+      <div class="look-panel-num" aria-hidden="true">01</div>
+      <div class="look-panel-vname" aria-hidden="true">Meridian Suite</div>
+      <div class="look-panel-caption">
+        <span class="look-panel-tag">Living Room · Signature Series</span>
+        <div class="look-panel-name">The Meridian<br>Suite</div>
+        <p class="look-panel-desc">Soft velvet sectionals anchored by brass accents — a room that invites you to stay a little longer.</p>
+      </div>
+    </div>
+
+    <div class="look-panel" role="listitem" tabindex="0" aria-label="Evening Ivory">
+      <img class="look-panel-img" src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=1400&q=90" alt="Evening Ivory" loading="lazy" decoding="async">
+      <div class="look-panel-overlay" aria-hidden="true"></div>
+      <div class="look-panel-num" aria-hidden="true">02</div>
+      <div class="look-panel-vname" aria-hidden="true">Evening Ivory</div>
+      <div class="look-panel-caption">
+        <span class="look-panel-tag">Living Room · Comfort Series</span>
+        <div class="look-panel-name">Evening<br>Ivory</div>
+        <p class="look-panel-desc">Ivory bouclé sofa bathed in warm evening light — effortless, quiet luxury at its peak.</p>
+      </div>
+    </div>
+
+    <div class="look-panel" role="listitem" tabindex="0" aria-label="The Atlas Bedroom">
+      <img class="look-panel-img" src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=1400&q=90" alt="The Atlas Bedroom" loading="lazy" decoding="async">
+      <div class="look-panel-overlay" aria-hidden="true"></div>
+      <div class="look-panel-num" aria-hidden="true">03</div>
+      <div class="look-panel-vname" aria-hidden="true">Atlas Bedroom</div>
+      <div class="look-panel-caption">
+        <span class="look-panel-tag">Bedroom · Sanctuary</span>
+        <div class="look-panel-name">The Atlas<br>Bedroom</div>
+        <p class="look-panel-desc">A bespoke upholstered bed frame with low-profile nightstands — restrained, restorative luxury.</p>
+      </div>
+    </div>
+
+    <div class="look-panel" role="listitem" tabindex="0" aria-label="Obsidian Lounge">
+      <img class="look-panel-img" src="https://images.unsplash.com/photo-1549187774-b4e9b0445b41?w=1400&q=90" alt="Obsidian Lounge" loading="lazy" decoding="async">
+      <div class="look-panel-overlay" aria-hidden="true"></div>
+      <div class="look-panel-num" aria-hidden="true">04</div>
+      <div class="look-panel-vname" aria-hidden="true">Obsidian Lounge</div>
+      <div class="look-panel-caption">
+        <span class="look-panel-tag">Lounge · Dark Palette</span>
+        <div class="look-panel-name">Obsidian<br>Lounge</div>
+        <p class="look-panel-desc">Charcoal velvet chaise complemented by dark oak and matte brass — moody and unmistakably Thian.</p>
+      </div>
+    </div>
+
+    <div class="look-panel" role="listitem" tabindex="0" aria-label="Gather in Gold">
+      <img class="look-panel-img" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1400&q=90" alt="Gather in Gold" loading="lazy" decoding="async">
+      <div class="look-panel-overlay" aria-hidden="true"></div>
+      <div class="look-panel-num" aria-hidden="true">05</div>
+      <div class="look-panel-vname" aria-hidden="true">Gather in Gold</div>
+      <div class="look-panel-caption">
+        <span class="look-panel-tag">Dining · Gather Series</span>
+        <div class="look-panel-name">Gather<br>in Gold</div>
+        <p class="look-panel-desc">A bespoke dining set in warm walnut and gold-stitched leather — where every meal becomes a ritual.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDITORIAL MOSAIC -->
+<section id="mosaic">
+  <div class="mosaic-header reveal">
+    <div>
+      <div class="section-label">Editorial</div>
+      <h2 class="section-title">A Gallery of<br><em>Quiet Statements</em></h2>
+    </div>
+    <p class="mosaic-copy">Inspired by European ateliers and modern Indian living, Thian pieces are designed to feel effortless—architectural lines, indulgent textures, and proportions that flatter every room.</p>
+  </div>
+  <div class="mosaic-grid reveal">
+    <figure class="mosaic-tile big">
+      <img src="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1600&q=85" alt="Bedroom scene" loading="lazy" decoding="async">
+      <div class="tile-overlay">
+        <div class="tile-title">Sanctuary Proportions<span class="tile-meta">Bedroom</span></div>
+      </div>
+    </figure>
+    <figure class="mosaic-tile">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=85" alt="Sofa in living room" loading="lazy" decoding="async">
+      <div class="tile-overlay"><div class="tile-title">Soft Geometry<span class="tile-meta">Sofas</span></div></div>
+    </figure>
+    <figure class="mosaic-tile">
+      <img src="https://images.unsplash.com/photo-1549187774-b4e9b0445b41?auto=format&fit=crop&w=1200&q=85" alt="Chair detail" loading="lazy" decoding="async">
+      <div class="tile-overlay"><div class="tile-title">Modern Heirlooms<span class="tile-meta">Accent</span></div></div>
+    </figure>
+    <figure class="mosaic-tile wide">
+      <img src="https://images.unsplash.com/photo-1600566753051-f0f05b8b2e8b?auto=format&fit=crop&w=1800&q=85" alt="Living room with neutral palette" loading="lazy" decoding="async">
+      <div class="tile-overlay"><div class="tile-title">Neutral, Never Ordinary<span class="tile-meta">Living</span></div></div>
+    </figure>
+    <figure class="mosaic-tile">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85" alt="Fabric texture" loading="lazy" decoding="async">
+      <div class="tile-overlay"><div class="tile-title">Texture Forward<span class="tile-meta">Fabrics</span></div></div>
+    </figure>
+    <figure class="mosaic-tile">
+      <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85" alt="Dining room" loading="lazy" decoding="async">
+      <div class="tile-overlay"><div class="tile-title">Gather in Light<span class="tile-meta">Dining</span></div></div>
+    </figure>
+  </div>
+</section>
+
+<!-- MATERIALS -->
+<section id="materials">
+  <div class="reveal">
+    <div class="section-label">Material Library</div>
+    <h2 class="section-title">Touch, Tone,<br>and <em>Timelessness</em></h2>
+  </div>
+  <div class="materials-grid reveal">
+    <div class="materials-hero">
+      <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1800&q=85" alt="Material curation" loading="lazy" decoding="async">
+    </div>
+    <div class="materials-right">
+      <p class="material-notes">Choose from premium fabrics and finishes—velvets, bouclés, linens, performance weaves, and leathers—paired with warm woods and refined metal accents. Every selection is guided by how you live, not just how it looks.</p>
+      <div>
+        <div class="section-label" style="margin-bottom:14px;">Signature Palette</div>
+        <div class="swatches" aria-label="Material swatches">
+          <div class="swatch" title="Champagne"></div>
+          <div class="swatch" title="Brass"></div>
+          <div class="swatch" title="Ivory"></div>
+          <div class="swatch" title="Stone"></div>
+          <div class="swatch" title="Obsidian"></div>
+          <div class="swatch" title="Parchment"></div>
+        </div>
+      </div>
+      <div class="material-pills" aria-label="Material highlights">
+        <span class="pill">Performance weaves</span>
+        <span class="pill">Italian-inspired leather</span>
+        <span class="pill">Bouclé</span>
+        <span class="pill">Solid wood frames</span>
+        <span class="pill">Brushed metal</span>
+        <span class="pill">Stain resistance</span>
+      </div>
+      <a href="#contact" class="btn-outline" style="margin-top:10px;">Request swatches <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CRAFT -->
+<section id="craft">
+  <div class="craft-text reveal">
+    <div class="section-label">Craftsmanship</div>
+    <h2 class="section-title">Built to<br>Last a <em>Lifetime</em></h2>
+    <p class="intro-body" style="margin-top:20px; margin-bottom:0;">
+      Every Thian piece begins not on a factory floor, but in a conversation — about how you live, what you love, and how your home should feel from the moment you walk through the door.
+    </p>
+    <div class="craft-features">
+      <div>
+        <div class="craft-feature-title">Premium Fabrics</div>
+        <p class="craft-feature-desc">Imported velvets, linens, and leathers selected for both beauty and longevity.</p>
+      </div>
+      <div>
+        <div class="craft-feature-title">Solid Wood Frames</div>
+        <p class="craft-feature-desc">Kiln-dried hardwood cores built to withstand decades of daily living.</p>
+      </div>
+      <div>
+        <div class="craft-feature-title">Custom Dimensions</div>
+        <p class="craft-feature-desc">Every piece is made-to-measure to fit your space perfectly.</p>
+      </div>
+      <div>
+        <div class="craft-feature-title">10-Year Warranty</div>
+        <p class="craft-feature-desc">Our confidence in quality, backed by a decade of assurance.</p>
+      </div>
+    </div>
+  </div>
+  <div class="craft-images reveal">
+    <div class="craft-img-main">
+      <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?w=900&q=90" alt="Craftsmanship">
+    </div>
+    <div class="craft-img-small">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=90" alt="Fabric detail">
+    </div>
+    <div class="craft-img-small">
+      <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=90" alt="Wood detail">
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="reveal">
+    <div class="section-label">Gallery Wall</div>
+    <h2 class="section-title">Luxury You Can<br><em>Live In</em></h2>
+  </div>
+  <div class="gallery-grid reveal">
+    <div class="g span6 tall">
+      <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=85" alt="Living room look" loading="lazy" decoding="async">
+    </div>
+    <div class="g span3 short">
+      <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=1200&q=85" alt="Accent chair" loading="lazy" decoding="async">
+    </div>
+    <div class="g span3 short">
+      <img src="https://images.unsplash.com/photo-1581539250439-c96689b516dd?auto=format&fit=crop&w=1200&q=85" alt="Craft detail" loading="lazy" decoding="async">
+    </div>
+    <div class="g span4 tall">
+      <img src="https://images.unsplash.com/photo-1540574163026-643ea20ade25?auto=format&fit=crop&w=1600&q=85" alt="Sofa collection" loading="lazy" decoding="async">
+    </div>
+    <div class="g span4 tall">
+      <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1600&q=85" alt="Living room scene" loading="lazy" decoding="async">
+    </div>
+    <div class="g span4 tall">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=85" alt="Luxury interior" loading="lazy" decoding="async">
+    </div>
+    <div class="g span3 short">
+      <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1200&q=85" alt="Wood finish" loading="lazy" decoding="async">
+    </div>
+    <div class="g span3 short">
+      <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=1200&q=85" alt="Cushion detail" loading="lazy" decoding="async">
+    </div>
+    <div class="g span6 short">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=85" alt="Dining with warm tones" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- STORES -->
+<section id="stores">
+  <div class="stores-wrap">
+    <div class="stores-image reveal">
+      <img src="https://images.unsplash.com/photo-1600566752229-250ed79470f4?auto=format&fit=crop&w=1800&q=85" alt="Thian showroom experience" loading="lazy" decoding="async">
+    </div>
+    <div class="stores-content reveal">
+      <div class="section-label">Stores</div>
+      <h2 class="section-title">A Showroom<br>Designed to <em>Slow Time</em></h2>
+      <p class="stores-desc">Thian showrooms are not galleries of products—they are spaces to sit, feel, and understand comfort. Explore silhouettes, materials, and finishes in calm light, then tailor the final piece to your home.</p>
+      <div class="stores-chips" aria-label="Store cities">
+        <span class="chip">Ambur</span>
+        <span class="chip">Chennai (by appointment)</span>
+        <span class="chip">Bengaluru (coming soon)</span>
+      </div>
+      <div class="stores-actions">
+        <a href="#contact" class="btn-primary">Book a visit <span aria-hidden="true">→</span></a>
+        <a href="#materials" class="btn-outline">Request swatches <span class="btn-arrow">→</span></a>
+      </div>
+      <div class="stores-note">Prefer WhatsApp? Share your room size and a reference image—we’ll suggest layouts and fabric directions.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section id="testimonial">
+  <div class="testi-deco">"</div>
+  <div class="testi-content reveal">
+    <div class="testi-stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <blockquote class="testi-quote">
+      "We walked into Thian's showroom for a sofa and walked out with a vision for our entire home. The quality is unmistakable — every detail speaks of care."
+    </blockquote>
+    <div class="testi-name">Priya & Arun Krishnamurthy</div>
+    <div class="testi-place">Chennai, Tamil Nadu</div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="process-header reveal">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-title">Your Journey<br>with <em>Thian</em></h2>
+  </div>
+  <div class="process-steps reveal">
+    <div class="process-step">
+      <div class="process-num">01</div>
+      <div class="process-line"></div>
+      <div class="process-step-title">Consultation</div>
+      <p class="process-step-desc">Visit our showroom or call us. We listen to your vision, your space, and your lifestyle before offering a single suggestion.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">02</div>
+      <div class="process-line"></div>
+      <div class="process-step-title">Design & Selection</div>
+      <p class="process-step-desc">Choose from our curated collections or work with us on a fully bespoke piece. Fabrics, finishes, dimensions — all yours to define.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">03</div>
+      <div class="process-line"></div>
+      <div class="process-step-title">Crafted for You</div>
+      <p class="process-step-desc">Our artisans build your piece with the same care whether it's a single chair or an entire room. Precision at every joint and seam.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">04</div>
+      <div class="process-line"></div>
+      <div class="process-step-title">White Glove Delivery</div>
+      <p class="process-step-desc">We deliver, place, and style. You simply walk in and feel at home. Aftercare and warranty support for every Thian piece.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="contact-title">Visit Our<br><em>Showroom</em></h2>
+    <p class="contact-desc">
+      Experience the Thian difference in person. Our showroom in Ambur is open six days a week. Come, sit, and feel what luxury truly means.
+    </p>
+
+    <div class="contact-detail">
+      <div class="contact-icon">📍</div>
+      <div>
+        <div class="contact-info-label">Showroom</div>
+        <div class="contact-info-val">Ambur, Tamil Nadu, India</div>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-icon">📞</div>
+      <div>
+        <div class="contact-info-label">Phone / WhatsApp</div>
+        <div class="contact-info-val">+91 XXXXX XXXXX</div>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-icon">⏰</div>
+      <div>
+        <div class="contact-info-label">Hours</div>
+        <div class="contact-info-val">Mon – Sat, 10:00 AM – 7:00 PM</div>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-icon">✉</div>
+      <div>
+        <div class="contact-info-label">Email</div>
+        <div class="contact-info-val">hello@thian.in</div>
+      </div>
+    </div>
+  </div>
+
+  <form class="contact-form reveal" id="enquiryForm">
+    <div class="form-grid">
+      <div class="form-row">
+        <label class="form-label">Your Name</label>
+        <input class="form-input" name="name" type="text" placeholder="Full Name" autocomplete="name" required>
+      </div>
+      <div class="form-row">
+        <label class="form-label">Phone Number</label>
+        <input class="form-input" name="phone" type="tel" placeholder="+91 00000 00000" autocomplete="tel" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <label class="form-label">Email Address</label>
+      <input class="form-input" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+    </div>
+    <div class="form-row">
+      <label class="form-label">I'm Interested In</label>
+      <select class="form-select" name="interest" required>
+        <option value="" disabled selected>Select a category</option>
+        <option>Sofas & Sectionals</option>
+        <option>Recliners</option>
+        <option>Bedroom Furniture</option>
+        <option>Dining & Tables</option>
+        <option>Accent Chairs</option>
+        <option>Full Home Furnishing</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label class="form-label">Message</label>
+      <textarea class="form-textarea" name="message" placeholder="Tell us about your space and vision..." required></textarea>
+    </div>
+    <button class="btn-submit" type="submit">Send Enquiry <span aria-hidden="true">→</span></button>
+    <div id="formNote" style="margin-top:16px; font-size:12px; color: rgba(230,226,219,0.6); letter-spacing:0.05em; display:none;">
+      Thank you. We’ve received your enquiry and will contact you shortly.
+    </div>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-logo">THIAN</div>
+      <p class="footer-brand-tagline">Luxury furniture and bespoke sofas crafted for homes that demand the finest. Based in Ambur, serving India.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Collections</div>
+      <ul class="footer-links">
+        <li><a href="#collections">Sofas & Sectionals</a></li>
+        <li><a href="#collections">Recliners</a></li>
+        <li><a href="#collections">Bedroom Furniture</a></li>
+        <li><a href="#collections">Dining & Tables</a></li>
+        <li><a href="#collections">Accent Chairs</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="#intro">About Thian</a></li>
+        <li><a href="#why">Why Thian</a></li>
+        <li><a href="#craft">Craftsmanship</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#lookbook">Projects</a></li>
+        <li><a href="#stores">Stores</a></li>
+        <li><a href="#contact">Visit Showroom</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Connect</div>
+      <ul class="footer-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="mailto:hello@thian.in">hello@thian.in</a></li>
+        <li><a href="tel:+91XXXXXXXXXX">+91 XXXXX XXXXX</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Thian Furniture. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">thian.in</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Cursor
+  const cursor = document.getElementById('cursor');
+  let cx = 0, cy = 0, tx = 0, ty = 0;
+  let cursorStarted = false;
+  function cursorRaf() {
+    cx += (tx - cx) * 0.18;
+    cy += (ty - cy) * 0.18;
+    if (cursor) {
+      cursor.style.setProperty('--x', `${cx}px`);
+      cursor.style.setProperty('--y', `${cy}px`);
+    }
+    requestAnimationFrame(cursorRaf);
+  }
+  window.addEventListener('mousemove', (e) => {
+    tx = e.clientX;
+    ty = e.clientY;
+    cursor?.classList.add('on');
+    if (!cursorStarted) {
+      cursorStarted = true;
+      requestAnimationFrame(cursorRaf);
+    }
+  }, { passive: true });
+
+  const hoverTargets = document.querySelectorAll('a, button, .col-card, .look-item, .mosaic-tile, .g, .why-card');
+  hoverTargets.forEach((el) => {
+    el.addEventListener('mouseenter', () => cursor?.classList.add('active'));
+    el.addEventListener('mouseleave', () => cursor?.classList.remove('active'));
+  });
+  const sofaHoverTargets = document.querySelectorAll('.sofa-item, .sofa-img');
+  sofaHoverTargets.forEach((el) => {
+    el.addEventListener('mouseenter', () => cursor?.classList.add('view-mode'));
+    el.addEventListener('mouseleave', () => cursor?.classList.remove('view-mode'));
+  });
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuClose = document.getElementById('menuClose');
+  const mobileLinks = document.getElementById('mobileLinks');
+
+  function openMenu() {
+    mobileMenu.classList.add('open');
+    mobileMenu.setAttribute('aria-hidden', 'false');
+    menuBtn?.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    mobileMenu.classList.remove('open');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+    menuBtn?.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  menuBtn?.addEventListener('click', openMenu);
+  menuClose?.addEventListener('click', closeMenu);
+  mobileMenu?.addEventListener('click', (e) => {
+    if (e.target === mobileMenu) closeMenu();
+  });
+  mobileLinks?.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (a) closeMenu();
+  });
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMenu();
+  });
+
+  // Slow + smooth anchor scrolling (premium easing)
+  const prefersReduced = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+  function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  }
+  function getNavOffset() {
+    const n = document.getElementById('navbar');
+    if (!n) return 0;
+    return Math.round(n.getBoundingClientRect().height) + 10;
+  }
+  function smoothScrollToY(targetY, durationMs = 1100) {
+    if (prefersReduced) {
+      window.scrollTo(0, targetY);
+      return;
+    }
+    const startY = window.scrollY || window.pageYOffset;
+    const delta = targetY - startY;
+    const start = performance.now();
+    function tick(now) {
+      const t = Math.min(1, (now - start) / durationMs);
+      const eased = easeInOutCubic(t);
+      window.scrollTo(0, Math.round(startY + delta * eased));
+      if (t < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest?.('a[href^="#"]');
+    if (!a) return;
+    const href = a.getAttribute('href');
+    if (!href || href === '#') return;
+    const id = href.slice(1);
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    e.preventDefault();
+    if (mobileMenu?.classList.contains('open')) closeMenu();
+    const y = Math.max(0, target.getBoundingClientRect().top + window.scrollY - getNavOffset());
+    smoothScrollToY(y, 1200);
+    history.pushState(null, '', href);
+  }, { passive: false });
+
+  // Hero product stage logic
+  const sofaItems = document.querySelectorAll('[data-sofa-item]');
+  const heroShowcase = document.getElementById('heroShowcase');
+  let currentSofa = 0;
+  let sofaTimer;
+  const SOFA_FALL_MS = 3800;
+  const SOFA_DROP_OUT_MS = 1700;
+  const SOFA_GAP_MS = 500;
+  const SOFA_HOLD_MS = 1400;
+
+  function scheduleNextSofa(delayMs) {
+    clearTimeout(sofaTimer);
+    sofaTimer = setTimeout(runSofaCycle, delayMs);
+  }
+
+  function runSofaCycle() {
+    if (!sofaItems.length) return;
+    const outgoing = sofaItems[currentSofa];
+    const nextIndex = (currentSofa + 1) % sofaItems.length;
+    const incoming = sofaItems[nextIndex];
+
+    outgoing.classList.remove('active');
+    outgoing.classList.add('exit');
+    incoming.classList.remove('exit', 'active');
+
+    setTimeout(() => {
+      incoming.classList.add('active');
+      currentSofa = nextIndex;
+    }, SOFA_DROP_OUT_MS + SOFA_GAP_MS);
+
+    setTimeout(() => {
+      outgoing.classList.remove('exit');
+    }, SOFA_DROP_OUT_MS + SOFA_GAP_MS + SOFA_FALL_MS);
+
+    scheduleNextSofa(SOFA_DROP_OUT_MS + SOFA_GAP_MS + SOFA_FALL_MS + SOFA_HOLD_MS);
+  }
+  
+  // Start auto-rotation (pause when tab is hidden)
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      clearTimeout(sofaTimer);
+    } else {
+      scheduleNextSofa(SOFA_HOLD_MS);
+    }
+  });
+
+  // Trigger initial animation for first sofa
+  window.addEventListener('load', () => {
+    sofaItems[0]?.classList.add('active');
+    scheduleNextSofa(SOFA_FALL_MS + SOFA_HOLD_MS);
+  });
+
+  // Hero motion on scroll
+  const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+  if (!prefersReducedMotion && heroShowcase) {
+    const brandText = heroShowcase.querySelector('.hero-brand-bg');
+
+    window.addEventListener('scroll', () => {
+      const y = Math.min(window.scrollY, 320);
+      const progress = y / 320;
+      if (brandText) {
+        brandText.style.transform = `translate(-50%, ${(-62 + progress * 5)}%) scale(${1 - progress * 0.04})`;
+      }
+      heroShowcase.classList.toggle('scrolled', window.scrollY > 36);
+    }, { passive: true });
+  }
+
+  // ── LOOKBOOK ACCORDION ──
+  (function () {
+    const accordion = document.getElementById('lookAccordion');
+    if (!accordion) return;
+    const panels = Array.from(accordion.querySelectorAll('.look-panel'));
+
+    function activatePanel(index) {
+      panels.forEach((p, i) => {
+        p.classList.toggle('active', i === index);
+      });
+      // Mobile: update heights
+      if (window.innerWidth < 840) {
+        panels.forEach((p) => {
+          p.style.height = p.classList.contains('active') ? '460px' : '68px';
+        });
+      }
+    }
+
+    const isTouch = () => window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+
+    // Desktop: hover to expand
+    panels.forEach((panel, i) => {
+      panel.addEventListener('mouseenter', () => {
+        if (!isTouch()) activatePanel(i);
+      });
+    });
+
+    // Click / tap
+    panels.forEach((panel, i) => {
+      panel.addEventListener('click', () => activatePanel(i));
+      panel.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          activatePanel(i);
+        }
+      });
+    });
+
+    // Mobile: stack vertically
+    function applyResponsive() {
+      const isMobile = window.innerWidth < 840;
+      accordion.style.flexDirection = isMobile ? 'column' : 'row';
+      accordion.style.height = isMobile ? 'auto' : '';
+      panels.forEach((p) => {
+        if (isMobile) {
+          p.style.flex = '0 0 auto';
+          p.style.height = p.classList.contains('active') ? '460px' : '68px';
+          p.style.transition = 'height 0.9s cubic-bezier(0.77, 0, 0.175, 1), filter 0.7s ease';
+        } else {
+          p.style.flex = '';
+          p.style.height = '';
+          p.style.transition = '';
+        }
+      });
+    }
+    applyResponsive();
+    window.addEventListener('resize', applyResponsive, { passive: true });
+  })();
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // Enquiry (demo) submit
+  const enquiryForm = document.getElementById('enquiryForm');
+  const formNote = document.getElementById('formNote');
+  enquiryForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formNote.style.display = 'block';
+    const btn = enquiryForm.querySelector('button[type="submit"]');
+    btn?.setAttribute('disabled', 'true');
+    btn?.setAttribute('aria-disabled', 'true');
+    setTimeout(() => {
+      enquiryForm.reset();
+      btn?.removeAttribute('disabled');
+      btn?.removeAttribute('aria-disabled');
+    }, 1200);
+  });
+</script>
+</body>
+</html>
