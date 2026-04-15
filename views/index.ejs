@@ -76,7 +76,7 @@
     </div>
   </div>
   <div class="hero-content">
-    <p class="hero-sub">Crafted to last a lifetime. Designed to define a room.</p>
+
     <div class="hero-actions">
       <a class="btn-primary" href="#collections">Explore collections <span aria-hidden="true">→</span></a>
       <a href="#contact" class="btn-outline">Book showroom visit <span class="btn-arrow">→</span></a>
@@ -761,7 +761,7 @@
     if (!n) return 0;
     return Math.round(n.getBoundingClientRect().height) + 10;
   }
-  function smoothScrollToY(targetY, durationMs = 1100) {
+  function smoothScrollToY(targetY, durationMs = 600) {
     if (prefersReduced) {
       window.scrollTo(0, targetY);
       return;
@@ -790,7 +790,7 @@
     e.preventDefault();
     if (mobileMenu?.classList.contains('open')) closeMenu();
     const y = Math.max(0, target.getBoundingClientRect().top + window.scrollY - getNavOffset());
-    smoothScrollToY(y, 1200);
+    smoothScrollToY(y, 800);
     history.pushState(null, '', href);
   }, { passive: false });
 
